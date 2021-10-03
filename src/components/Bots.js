@@ -11,7 +11,10 @@ export default function bots(props) {
                 <div className="f-item">{props.botbot}</div>
                 <div className="f-item"><div>Index value</div><div>{props.botindex}</div></div>
                 <div className="f-item" ><div>Cagr</div><div className="cagr">{props.botcagr}</div></div>
-                <div className="f-item"><div>botton1</div><div>button2</div></div>
+                <div className="f-item">
+                    <div><button>View algo</button></div>
+                    <div><button>Buy</button></div>
+                </div>
 
                 {/* <link to="/Viewalgo">scs</link> */}
             </div>

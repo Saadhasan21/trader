@@ -1,9 +1,14 @@
 .f-container{
     display: flex;
     justify-content: space-between;
+    
 }
 
  
 .cagr{
     color: lightgreen;
+}
+
+.main-body{
+    margin: 100px;
 }

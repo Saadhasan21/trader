@@ -47,9 +47,10 @@ function App() {
             <Bots botid={eachbot.id} botbot={eachbot.bot} botdisc={eachbot.description} botindex={eachbot['index-value']} botcagr={eachbot.cagr}/>
           ))}
         </Route>
-        {/* <Route path="//bots-details/:id=">
-          < Viewalgo />
-        </Route> */}
+
+        <Route path="/bots-details/:id">
+          <Viewalgo/>
+        </Route>
 
       </Switch>
       </div>

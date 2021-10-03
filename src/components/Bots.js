@@ -1,6 +1,7 @@
 import React from 'react';
 import './Bots.css';
 
+
 import { Link } from 'react-router-dom';
 
 export default function bots(props) {
@@ -14,7 +15,7 @@ export default function bots(props) {
                 <div className="f-item"><div>Index value</div><div>{props.botindex}</div></div>
                 <div className="f-item" ><div>Cagr</div><div className="cagr">{props.botcagr}</div></div>
                 <div className="f-item">
-                    <div><Link to="/Viewalgo">Viewalgo</Link></div>
+                    <div><Link to={`/bots-details/${props.botid}`}>Viewalgo</Link></div>
                     <div><button>Buy</button></div>
                 </div>
 

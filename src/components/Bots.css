@@ -1,0 +1,9 @@
+.f-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+ 
+.cagr{
+    color: lightgreen;
+}

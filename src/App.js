@@ -1,5 +1,5 @@
 
-import './App.css';
+
 import Viewalgo from "./components/Viewalgo";
 import Bots from "./components/Bots";
 import {

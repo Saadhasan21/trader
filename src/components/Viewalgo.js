@@ -1,9 +1,8 @@
 import React from 'react'
 
-export default function Viewalgo() {
+export default function Viewalgo(props) {
     return (
         <div>
-            <h1>algo</h1>
         </div>
     )
 }

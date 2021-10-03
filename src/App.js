@@ -44,13 +44,15 @@ function App() {
         <Route path="/bots">
           {data.map((eachbot)=>(
             
-            <Bots botid={eachbot.id} botbot={eachbot.bot} botdisc={eachbot.description} botindex={eachbot['index-value']} botcagr={eachbot.cagr}/>
+            <Bots botid={eachbot.id} botbot={eachbot.bot} botindex={eachbot['index-value']} botcagr={eachbot.cagr}/>
           ))}
         </Route>
 
         <Route path="/bots-details/:id">
-          <Viewalgo/>
-        </Route>
+        {data.map((eachbot)=>(
+            
+            <Viewalgo  botbot={eachbot.bot} botdisc={eachbot.description} botindex={eachbot['index-value']} botcagr={eachbot.cagr}/>
+          ))}        </Route>
 
       </Switch>
       </div>

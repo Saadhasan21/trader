@@ -39,18 +39,20 @@ function App() {
   return (
 
     <Router>
+      <div>
       <Switch>
         <Route path="/bots">
           {data.map((eachbot)=>(
+            
             <Bots botid={eachbot.id} botbot={eachbot.bot} botdisc={eachbot.description} botindex={eachbot['index-value']} botcagr={eachbot.cagr}/>
           ))}
-          <Bots />
         </Route>
-        <Route path="//bots-details/:id=">
+        {/* <Route path="//bots-details/:id=">
           < Viewalgo />
-        </Route>
+        </Route> */}
 
       </Switch>
+      </div>
     </Router >
   );
 }

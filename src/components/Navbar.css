@@ -1,0 +1,6 @@
+.n-container{
+    display: flex;
+    justify-content:space-around;
+    background-color:antiquewhite;
+    height: 30px;
+}

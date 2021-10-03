@@ -2,11 +2,14 @@
 
 import Viewalgo from "./components/Viewalgo";
 import Bots from "./components/Bots";
+import Navbar from "./components/Navbar";
+
 import {
   BrowserRouter as Router,
   Switch,
   Route,
 } from "react-router-dom";
+
 
 
 function App() {
@@ -40,6 +43,7 @@ function App() {
 
     <Router>
       <div>
+        <Navbar/>
       <Switch>
         <Route path="/bots">
           {data.map((eachbot)=>(

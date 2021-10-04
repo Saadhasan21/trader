@@ -1,21 +1,30 @@
-import React from 'react'
+import React, { useEffect } from "react";
+import { useParams } from "react-router-dom";
+import { useDispatch, useSelector } from "react-redux";
+import {
+    selectedProduct,
+    removeSelectedProduct,
+} from "../redux/actions/productsActions";
 
-export default function Viewalgo(props) {
+const Viewalgo = () => {
+    const { productId } = useParams();
+    console.log(productId);
+    // let bots = useSelector((state) => state.bots);
+    // const { id, description, bot, index, cagr } = bots;
+    // const dispatch = useDispatch();
+    // console.log(bots);
 
-    return (
-        <div className="f-container">
-            <div>
-                <div>{props.botbot}</div>
-                <div>{props.botdisc}</div>
-            </div>
-            <div>
-                <div>Index Value</div>
-                <div>{props.botindex}</div>
-            </div>
-            <div>
-                <div>cagr</div>
-                <div className="cagr">{props.botcagr}</div>
-            </div>
-        </div>
-    );
+    // const getdetails = () =>{
+    //     dispatch(selectedProduct({description}));
+    // }
+
+    // useEffect(()=>{
+    //     if (productId && productId !== "") getdetails();
+    
+
+return (
+    <div>details</div>
+)
 }
+
+export default Viewalgo;

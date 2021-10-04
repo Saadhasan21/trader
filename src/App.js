@@ -21,8 +21,6 @@ function App() {
     <Router>
       <div>
         <Navbar />
-        <BotsContainer />
-
         <Switch>
           <Route path="/bots">
             <BotsContainer />

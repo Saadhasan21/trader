@@ -24,6 +24,9 @@ const Totalbots = () => {
                         <Link to={`/bots-details/${id}`}>
                             <button>View algo</button>
                         </Link>
+                        <div>
+                        <button>Buy</button>
+                        </div>
                     </div>
                 </div>
 
